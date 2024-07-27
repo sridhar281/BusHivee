@@ -1,0 +1,91 @@
+{% extends "bus/main.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    {% block element %}
+    <div class="content" style="background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1KZ4QiOFzSAr3ySnvBukG6lmKEzKc6FWnsg&s');background-attactchment:fixed">
+      <div class="maps" style="border: 100px black; padding: 20px;">
+        <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmr96YgOzVhsjRmP1Y2YZaqikw2BWW4Jwhw&s" width='1200px' height='150px' alt="">
+        
+            <h2>You can view all the available places from here!!</h2>
+            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <div style="margin-right: 7px;">
+                    <h3 style="color:brown">1. Kurmanapalem</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10369.29045468872!2d83.15751715200219!3d17.690797927219744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39692c638acdf9%3A0x29ca53f154f3fe5c!2sKurmannapalem%20Bus%20Stop!5e1!3m2!1sen!2sin!4v1720870421154!5m2!1sen!2sin"
+                     width="250" height="200" style="border:5px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div style="margin-right: 7px;">
+                    <h3 style="color:brown">2. Duvvada</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14689.585465009946!2d83.12828446471293!3d17.693741090751633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3968c453c96d19%3A0xd47d21e37ccfa75c!2sDuvvada%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530046!5e1!3m2!1sen!2sin!4v1720870545499!5m2!1sen!2sin"
+                    width="250" height="200" style="border: 5px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mcs"></iframe>
+                </div>
+                <div style="margin-right:7px;">
+                  <h3 style="color:brown">3. Gajuwaka</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21676.71987093401!2d83.19094862684213!3d17.685088464244625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3969a99257eed1%3A0x8e84a34e9484f3bc!2sGajuwaka%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e1!3m2!1sen!2sin!4v1720870195765!5m2!1sen!2sin"
+                   width="250" height="200" style="border:5px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h3 style="color:brown">4. Sector 1</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1954353021742!2d83.15483257439438!3d17.65015229518378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a396f8220f3894f%3A0x6c7c4e642f728be7!2sSector-1%20Bus%20Stop!5e1!3m2!1sen!2sin!4v1720870929516!5m2!1sen!2sin" 
+                    width="250" height="200" style="border:5px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </center>
+    </div> 
+    <div class="about-us" style="max-width: 800px; margin: 0 auto; padding: 20px; text-align: justify; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+      <h2 style="color: #333; text-align: center; margin-bottom: 20px;">About Us</h2>
+      <p>Welcome to our Bus Bookings, your trusted platform for seamless bus travel across Visakhapatnam and beyond. We offer a wide selection of routes, competitive pricing, and real-time booking options. Our user-friendly 
+        interface ensures quick and secure transactions, supported by dedicated customer service. Whether for daily commuting or leisure trips, our goal is to make your journey comfortable and convenient. Explore our comprehensive 
+        network of bus operators and enjoy hassle-free travel planning. Join thousands of satisfied customers who rely on Visakhapatnam Bus Bookings for their transportation needs. Travel smart with us and experience the difference!</p>
+      <p>Discover the convenience of booking with Visakhapatnam Bus Bookings and enjoy reliable, punctual service with every ride. Plan your next journey with us today and let us take you where you need to go!</p>
+      <div class="iframe-container" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+        <iframe src="https://videocdn.cdnpk.net/videos/de221294-cc4c-4a0d-af6b-6c5276e98674/horizontal/previews/watermarked/large.mp4" width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy" autoplay></iframe>
+    </div>
+    </div>
+    <div class="gallery" id="gallery" style="text-align: center; margin-top: 4rem;">
+      <h2 class="section_header">Gallery Photos</h2>
+      <div class="gallery__grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+          <div class="gallery__card">
+              <img src="{%static 'images/imag.jpeg'%}" alt="gallery" style="width: 100%; height: 60%; object-fit: cover;">
+              <div class="gallery__content">
+                  <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Kurmanapalem</h4>
+                  <p>Golconda Fort</p>
+              </div>
+          </div>
+          <div class="gallery__card">
+              <img src="{% static "images/6.jpeg" %}" alt="gallery" style="width: 100%; height: 60%; object-fit: cover;">
+              <div class="gallery__content">
+                  <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Mumbai</h4>
+                  <p>Colaba</p>
+              </div>
+          </div>
+          <div class="gallery__card">
+              <img src="{%static 'images/1.jpeg'%}" alt="gallery" style="width: 100%; height: 60%; object-fit: cover;">
+              <div class="gallery__content">
+                  <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Vizag</h4>
+                  <p>R.K Beach</p>
+              </div>
+          </div>
+          <div class="gallery__card">
+              <img src="{%static 'images/sector1.avif'%}" alt="gallery" style="width: 100%; height: 60%; object-fit: cover;">
+              <div class="gallery__content">
+                  <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">sector-1</h4>
+                  <p>Howrah Bridge</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+</body>
+{% endblock element %}
+</html>

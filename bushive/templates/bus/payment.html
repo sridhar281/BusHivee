@@ -1,0 +1,196 @@
+{% extends "bus/main.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% block element %}
+  <div class="page" style="background:">
+    <center><h1>Payment!!!</h1>
+    <img src="{% static 'images/images.jpeg' %}" alt="Bus Image">
+</center>
+   <br>
+  <div class="container" style="width:50%;align-items:center;background:lightgreen">
+    <h2>Book Your Ticket</h2>
+    <div class="container">
+        {% crispy form %}
+        <br>
+        {% if payment %}
+        <form action="{% url 'payment-status' %}" method="POST">
+             {% csrf_token %}
+          <script
+              src="https://checkout.razorpay.com/v1/checkout.js"
+              data-key="rzp_test_1wV97qLsLcZDQ7" 
+              data-amount="{{payment.amount}}"        
+              data-currency="{{payment.currency}}"
+              data-order_id="{{payment.id}}"
+              data-buttontext="Pay with Razorpay"
+              data-name="bus bookings"
+              data-description="Book Your Ticket Online To make your work easy"
+              data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0J3L7n_4WkbtfQ8lXNAkhDpg8VXrgyAAb9T0BUYXE3D3-aYmXCBmRP7zflJywmrPHnwE&usqp=CAU"
+              data-prefill.name="{{payment.name}}"
+              data-prefill.email="sridharyelamanchali025@gmail.com"
+              data-theme.color="blue"
+          ></script>
+          <input type="hidden" custom="Hidden Element" name="hidden"/>
+          </form>
+          {% endif %}
+    </div>
+  </div>
+</div>
+
+<body style="font-family: Arial, sans-serif;">
+  <div class="container" style="margin-top: 50px;">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card" style="border-radius: 10px; padding: 20px; text-align: center;">
+                  <div class="card-body">
+                      <h5 class="card-title">Invoices</h5>
+                      <p class="card-text">Send your customers GST compliant invoices with item level details to accept online payments through debit/credit cards, netbanking, wallets, UPI etc.</p>
+                      <a href="#" class="btn btn-link">Know More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card" style="border-radius: 10px; padding: 20px; text-align: center;">
+                  <div class="card-body">
+                      <h5 class="card-title">Payment Pages</h5>
+                      <p class="card-text">Create custom-branded, hosted Payment Pages in a few clicks to accept payments online. Your business can go online with zero integration and tech efforts.</p>
+                      <a href="#" class="btn btn-link">Know More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card" style="border-radius: 10px; padding: 20px; text-align: center;">
+                  <div class="card-body">
+                      <h5 class="card-title">Smart Collect</h5>
+                      <p class="card-text">Now accept NEFT, RTGS and IMPS transfers through customer identifiers that can be generated on-demand with automated reconciliation for payments at scale.</p>
+                      <a href="#" class="btn btn-link">Know More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid" style="background: linear-gradient(to right, #0062E6, #33AEFF); color: white; padding: 50px 0; margin-top: 50px;">
+      <div class="container text-center">
+          <h2>Supercharge your business with Razorpay</h2>
+          <p>Sign up now to experience the future of payments and offer your customers the best checkout experience.</p>
+          <ul class="list-unstyled">
+              <li>✔️ Quick onboarding</li>
+              <li>✔️ Access to entire product suite</li>
+              <li>✔️ API access</li>
+              <li>✔️ 24x7 support</li>
+          </ul>
+          <button class="btn btn-light mt-3">Sign Up Now</button>
+          <button class="btn btn-outline-light mt-3">Know More</button>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+  <br>
+  {% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} {% extends "bus/main.html" %}
+{% load crispy_forms_tags %}
+{% load crispy_forms_field %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  {% block element%}
+  {%include 'bus/navbar.html'%}
+  <div class="container" style="width:15%;align-items:center">
+    <h1>Payment!!!</h1>
+    {% crispy form %}
+    <button type="submit">Submit</button>
+
+    <img src="{% static 'images/6.jpeg' %}" alt="Bus Image">
+    </div>
+  {%endblock%}
+  
+</body>
+</html> {% endcomment %}
+
+
+
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-k6RqeWeciB6K8Xg6o9D3GfIlzqk2a5lV2lB/t6A7Y0W5L8RX/ZB3/B0+/eG1r52FtU9Qb7zPDAw+EVeGZ+tNQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 100%; max-width: 400px;">
+        <h1 style="margin-bottom: 20px; font-size: 24px; text-align: center; color: #333;">Payment Information</h1>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="{%static 'images/payment.png'%}" alt="Company Logo" style="max-width: 150px;">
+        </div>
+        <form action="/submit-payment" method="POST">
+            <div style="margin-bottom: 15px;">
+                <label for="cardholder-name" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Cardholder Name</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="card-number" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                <div style="flex: 1; margin-right: 10px;">
+                    <label for="expiry-date" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+                </div>
+                <div style="flex: 1;">
+                    <label for="cvv" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+                </div>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="billing-address" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Billing Address</label>
+                <input type="text" id="billing-address" name="billing-address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box;">
+            </div>
+            <button type="submit" style="width: 100%; padding: 10px; border: none; border-radius: 4px; background-color: #28a745; color: white; font-size: 18px; cursor: pointer; transition: background-color 0.3s ease;">Submit Payment</button>
+        </form>
+        <div style="text-align: center; margin-top: 20px;">
+            <i class="fab fa-cc-visa" style="font-size: 2em; margin: 0 10px; color: #1a1f71;"></i>
+            <i class="fab fa-cc-mastercard" style="font-size: 2em; margin: 0 10px; color: #eb001b;"></i>
+            <i class="fab fa-cc-amex" style="font-size: 2em; margin: 0 10px; color: #007bc1;"></i>
+            <i class="fab fa-cc-paypal" style="font-size: 2em; margin: 0 10px; color: #003087;"></i>
+        </div>
+    </div>
+</body>
+</html>  {% endcomment %}

@@ -1,0 +1,76 @@
+
+{% extends "bus/main.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={%static "/css/home.css"%}>
+  <title>Document</title>
+
+</head>
+<body>
+  {% block element%}
+  <div class="back"style="background: linear-gradient(to right, #87CEEB, white);background-size: cover;color: black;font-size: 21px;text-align: center;">
+    <img src=" {% static "images/background.jpg" %}" alt="" style="width:100%;height:80%;sticky:">
+    <center><h4>Discover your next adventure with our seamless booking website, where every journey begins with a click. <br>Explore a world of destinations, tailored to your dreams and desires<br> Enjoy effortless planning and unparalleled support, making your travel experience as smooth as possible. <br>Your perfect getaway is just a booking away!</h4></center><center>
+  <img style="height:40;width:60;border-radius:50px;"src="{% static 'images/th.jpeg'%}" alt="">
+  <p>You can log into bookings site for your bookings!</p>  
+  <center>
+  </center>
+</center>
+<section class="about" id="about" style="padding: 3rem 0; background-color:  linear-gradient(to right, #87CEEB, white); text-align: center;">
+  <div class="section__container about__container" style="max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+      <div class="about__content" style="flex: 1; text-align: left;">
+          <h4 class="section__header" style="color: red; font-size: 2.5rem; font-weight: bold;">Our Mission</h4>
+          <h2 class="section__subheader" style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Our mission is to provide seamless travel experiences through efficient management systems. We aim to streamline booking processes, optimize resource utilization, and ensure customer satisfaction. By leveraging innovative technologies, we strive to deliver personalized services tailored to each traveler's needs. Our goal is to simplify travel planning, enhance operational efficiency, and exceed client expectations. With dedication and expertise, we commit to facilitating memorable journeys for all our customers."
+          </h2>
+          <div class="about__flex" style="display: flex; justify-content: space-around; margin-bottom: 1.5rem;">
+              <div class="about__card" style="text-align: center; flex: 1;color:black;background:grey;border:2px solid black">
+                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">16</h4>
+                  <p style="font-size: 0.9rem;">Tour Guides</p>
+              </div>
+              <div class="about__card" style="text-align: center; flex: 1;background:grey;border:2px solid black">
+                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">268</h4>
+                  <p style="font-size: 0.9rem;">Completed Trips</p>
+              </div>
+              <br>
+              <div class="about__card" style="text-align: center; flex: 1;background:grey;border:2px solid black">
+                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">153</h4>
+                  <p style="font-size: 0.9rem;">Destinations</p>
+              </div>
+              <br>
+              <br><br>
+          </div>
+          <button class="btn" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; transition: background-color 0.3s ease;">
+              Read More <i class="ri-arrow-right-line" style="margin-left: 5px;"></i>
+          </button>
+      </div>
+      <div class="about__image" style="flex: 1; text-align: center; margin-top: 2rem;">
+          <img src="{%static 'images/track.jpeg'%}" alt="about image" style="max-width: 100%; height: auto; max-height: 500px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      </div>
+  </div>
+</section>
+
+<div style="display: flex; gap: 20px;">
+  <center>
+  <div style="position: relative; width: 250px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+      <img src="{%static 'images/track.jpeg'%}" alt="Sample Image" style="width: 100%; display: block;">
+      <div class="content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-sizing: border-box; transition: all 0.3s ease;">
+          <h3>API & Bulk Payouts</h3>
+          <p>Make multiple payouts with a single click from your dashboard.</p>
+      </div>
+  </div>
+  <div style="position: relative; width: 250px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+      <img src="https://via.placeholder.com/250" alt="Sample Image" style="width: 100%; display: block;">
+      <div class="content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-sizing: border-box; transition: all 0.3s ease;">
+          <h3>Source to Pay</h3>
+          <p>Control and optimize vendor payments with an integrated payables solution.</p>
+      </div>
+  </div>
+</div>̥
+</body>
+{% endblock %}
+</html> 

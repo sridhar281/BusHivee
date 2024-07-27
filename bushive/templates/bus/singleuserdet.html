@@ -1,0 +1,57 @@
+{% extends "bus/main.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+{% block element %}
+<body style="background-color: #f8f9fa; font-family: Arial, sans-serif;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Customer:</h4>
+                <input type="text" class="form-control mb-2" placeholder="Customer Name">
+                <button class="btn btn-primary btn-block mb-2">Update Customer</button>
+                <button class="btn btn-danger btn-block">Delete Customer</button>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Information</h4>
+                <input type="text" class="form-control mb-2" placeholder="Email">
+                <input type="text" class="form-control mb-2" placeholder="Phone">
+            </div>
+            <div class="col-md-4">
+                <h4>Total Bookings</h4>
+                <div class="card" style="background-color: white; border: none; border-radius: 10px; padding: 20px;">
+                    <div class="card-body">
+                        <h1 class="text-center">1</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <button class="btn btn-primary mb-4">Search</button>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Date Ordered</th>
+                            <th>Status</th>
+                            <th>Update</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock element %}
+</body>
+</html>

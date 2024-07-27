@@ -1,0 +1,30 @@
+/* You can add more specific styling here */
+.back {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.feature-card {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
