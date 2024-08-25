@@ -1,0 +1,72 @@
+{% extends "bus/main.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+{% block element %}
+<body style="background-color: black; font-family: Arial, sans-serif;">
+    <div class="container mt-5" style="background-color:lightgrey">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Customer:</h4>
+                <input type="text" class="form-control mb-2" value="{{ user.name }}" readonly>
+                <button class="btn btn-primary btn-block mb-2">Update Customer</button>
+                <button class="btn btn-danger btn-block">Delete Customer</button>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Information</h4>
+                <input type="text" class="form-control mb-2" value="{{ user.email }}" readonly>
+                <input type="text" class="form-control mb-2" value="{{ user.phone_number }}" readonly>
+            </div>
+            <div class="col-md-4">
+                <h4>Total Bookings</h4>
+                <div class="card" style="background-color:lightblue; border: none; border-radius: 10px; padding: 20px;">
+                    <div class="card-body">
+                        <h1 class="text-center">{{ reservations|length }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>User Reservations</h2>
+                <img src="{%static 'images/Designer (9).jpeg.jpg'%}" height="360px" width="1100px"style="border:2px solid black;"alt="">
+                <table class="table table-sm">
+                    <thead style="background:black;color:white"><br>
+                        <br>
+                        <tr>
+                            <th>ID</th>
+                            <th>Bus Number</th>
+                            <th>Seat Number</th>
+                            <th>Trip Detail</th>
+                            <th>Status</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for reservation in reservations %}
+                        <tr>
+                            <td>{{ reservation.id }}</td>
+                            <td>{{ reservation.trip.bus }}</td>
+                            <td>{{ reservation.seat_number }}</td>
+                            <td>{{reservation.trip}}</td>
+                            <td>{{ reservation.reservation_status }}</td>
+                           <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <br>
+                </table>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+{% endblock element %}
+</body>
+</html>

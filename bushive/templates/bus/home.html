@@ -13,10 +13,11 @@
 <body>
   {% block element%}
   <div class="back"style="background: linear-gradient(to right, #87CEEB, white);background-size: cover;color: black;font-size: 21px;text-align: center;">
-    <img src=" {% static "images/background.jpg" %}" alt="" style="width:100%;height:80%;sticky:">
+    <img src=" {% static "images/background.jpg" %}" alt="" style="width:100%;height:80%;margin-bottom:20px">
     <center><h4>Discover your next adventure with our seamless booking website, where every journey begins with a click. <br>Explore a world of destinations, tailored to your dreams and desires<br> Enjoy effortless planning and unparalleled support, making your travel experience as smooth as possible. <br>Your perfect getaway is just a booking away!</h4></center><center>
-  <img style="height:40;width:60;border-radius:50px;"src="{% static 'images/th.jpeg'%}" alt="">
-  <p>You can log into bookings site for your bookings!</p>  
+        <br>
+        <img style="height:360px; width:500px; border-radius:50px;border:2px solid black;" src="{% static 'images/Designer.jpeg' %}" alt="">
+  <p><a href="{%url 'trip_list'%}">You can log into bookings site for your bookings!</a></p>  
   <center>
   </center>
 </center>
@@ -32,13 +33,13 @@
                   <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">16</h4>
                   <p style="font-size: 0.9rem;">Tour Guides</p>
               </div>
-              <div class="about__card" style="text-align: center; flex: 1;background:grey;border:2px solid black">
-                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">268</h4>
+              <div class="about__card" style="text-align: center; flex: 1;background:grey;border:2px solid black;gap:16rem;">
+                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">26</h4>
                   <p style="font-size: 0.9rem;">Completed Trips</p>
               </div>
               <br>
               <div class="about__card" style="text-align: center; flex: 1;background:grey;border:2px solid black">
-                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">153</h4>
+                  <h4 style="font-size: 2rem; font-weight: 600; font-family: Arial, sans-serif; margin-bottom: 5px;">15</h4>
                   <p style="font-size: 0.9rem;">Destinations</p>
               </div>
               <br>
@@ -54,23 +55,31 @@
   </div>
 </section>
 
-<div style="display: flex; gap: 20px;">
-  <center>
-  <div style="position: relative; width: 250px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
-      <img src="{%static 'images/track.jpeg'%}" alt="Sample Image" style="width: 100%; display: block;">
-      <div class="content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-sizing: border-box; transition: all 0.3s ease;">
-          <h3>API & Bulk Payouts</h3>
-          <p>Make multiple payouts with a single click from your dashboard.</p>
-      </div>
-  </div>
-  <div style="position: relative; width: 250px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
-      <img src="https://via.placeholder.com/250" alt="Sample Image" style="width: 100%; display: block;">
-      <div class="content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background-color: rgba(255, 255, 255, 0.9); box-sizing: border-box; transition: all 0.3s ease;">
-          <h3>Source to Pay</h3>
-          <p>Control and optimize vendor payments with an integrated payables solution.</p>
-      </div>
-  </div>
-</div>̥
+<div style="display: flex; justify-content: space-around; margin: 20px;">
+    <div style="position: relative; background: linear-gradient(135deg, #1e90ff, #00bfff); border: 1px solid #ccc; border-radius: 10px; width: 25%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.children[2].style.opacity='1';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.children[2].style.opacity='0';">
+        <div style="font-size: 1.5em; margin-bottom: 10px; color: black;"><b>Bookings</b></div>
+        <div style="font-size: 1em; color: #fff;">Easily book your bus tickets online with real-time availability and secure payment options.</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 75%; background: rgba(0, 0, 0, 0.7); color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s;">
+            <div><a href="{%url 'trip_list'%}" style="color:white;font-size:20px"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+    <div style="position: relative; background:  linear-gradient(135deg, #1e90ff, #00bfff); border: 1px solid #ccc; border-radius: 10px; width: 25%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.children[2].style.opacity='1';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.children[2].style.opacity='0';">
+        <div style="font-size: 1.5em; margin-bottom: 10px; color: black;"><b>Queries</b></div>
+        <div style="font-size: 1em; color: #fff;">For any inquiries or support, please contact us directly and we’ll be happy to assist you.</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 75%; background:rgba(0, 0, 0, 0.7); color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s;">
+            <div><a href="{%url 'chat'%}" style="color:white;font-size:20px"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+    <div style="position: relative; background:  linear-gradient(135deg, #1e90ff, #00bfff); border: 1px solid #ccc; border-radius: 10px; width: 25%; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.children[2].style.opacity='1';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)'; this.children[2].style.opacity='0';">
+        <div style="font-size: 1.5em; margin-bottom: 10px; color: black;"><b>About</b></div>
+        <div style="font-size: 1em; color: #fff;">We are dedicated to providing innovative solutions that enhance your daily life through cutting-edge technology and exceptional service.</div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 75%; background: rgba(0, 0, 0, 0.7); color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s;">
+            <div><a href="{%url 'about'%}" style="color:white;font-size:20px"><i class="fa fa-link" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 {% endblock %}
 </html> 

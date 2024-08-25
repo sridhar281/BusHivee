@@ -15,13 +15,13 @@
     <img src="{% static 'images/images.jpeg' %}" alt="Bus Image">
 </center>
    <br>
-  <div class="container" style="width:50%;align-items:center;background:lightgreen">
+  <div class="container" style="width:50%;align-items:center;background:lightgrey">
     <h2>Book Your Ticket</h2>
     <div class="container">
         {% crispy form %}
         <br>
         {% if payment %}
-        <form action="{% url 'payment-status' %}" method="POST">
+        <form  action="{% url 'payment-status'%}"method="POST">
              {% csrf_token %}
           <script
               src="https://checkout.razorpay.com/v1/checkout.js"

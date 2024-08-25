@@ -9,118 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href={% static "/css/main.css" %}>
-    <style>
-        .table-striped tbody tr:hover {
-            background-color: #f1f1f1;
-            transform: scale(1.02);
-        }
-    
-        .table-striped tbody tr:hover td a {
-            background-color: #45a049;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-    </style>
     
 </head>
 <body>
     {% block element %}
     {% block pageContent %}
 <div class="book" style="background:linear-gradient(to right, #87CEEB, white);"> 
-   <center> <img src=" {% static "images/OIP.jpeg" %}" alt="" style="width:1200px;height:250px"></center>
-    <h1><center>"Don’t wait to create unforgettable memories! Book your tickets now and embark on your next adventure!"</center></h1>
-    <div class="d-flex flex-column w-100 justify-content-center align-items-center" style="padding: 20px;">
-        <h2 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 2.5em; margin-bottom: 20px; color: #333;">Available Bus Routes</h2>
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff7f50, #ff6347); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">R.T.C Complex - Simhachalam</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 15.2 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-                <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
-            </div>
-            
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-                <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
-              </div>
-            
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-                <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
-            </div>
-            
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #32cd32, #228b22); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Pendurthi - NAD Junction</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 12.6 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #1e90ff, #00bfff); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">R.K Beach - Sabbavaram</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 28.8 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff4500, #ff6347); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Srinagar</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 4 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff69b4, #ff1493); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Duvvada - Kurmanapalem</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 3.2 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff6347, #ff4500); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Sector:3</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 8 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ffd700, #ff8c00); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Gajuwaka</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 5.4 KM</p>
-            </div>
-          
-            <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #20b2aa, #48d1cc); color: white;">
-              <h3 style="margin-top: 0; font-size: 1.8em;">Sector:1 - Kurmanapalem</h3>
-              <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 6.3 KM</p>
-            </div>
-        </div>
-    </div>
-    <div style="width: 1300px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative;">
-        <div style="display: flex; background-color: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 2500px; border: 4px solid black;">
-            <form method="GET" action="{% url 'trip_list' %}" style="display: flex; width: 100%;">
-                <div style="margin: 10px; flex: 1;">
-                    <input type="text" name="start_location" list="startLocations" placeholder="From Station" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
-                    <datalist id="startLocations">
-                        {% for route in trips %}
-                            <option value="{{ route.start_location }}">
-                        {% endfor %}
-                    </datalist>
-                </div>
-                <div style="margin: 10px; flex: 1;">
-                    <input type="text" name="end_location" list="endLocations" placeholder="To Station" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
-                    <datalist id="endLocations">
-                        {% for route in trips %}
-                            <option value="{{ route.end_location }}">
-                        {% endfor %}
-                    </datalist>
-                </div>
-                <div style="margin: 10px; flex: 1;">
-                    <input type="datetime-local" name="departure_time" placeholder="Departure Time" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
-                </div>
-                <div style="display: flex; align-items: center; margin: 10px;">
-                    <button type="submit" style="padding: 15px; background-color: #FF6347; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; border: 2px solid black;" onclick="showTable(event)">Find Trip</button>
-                </div>
-            </form>
-        </div>
-    </div>
-     <h1>TABLE</h1>
+    <div class="book1">  
+    <img style="height:450px;width:100%;border:2px solid black;" src="{% static 'images/Designer (3).jpeg' %}" alt="">
      <div id="trip-table-container" style="display: none; background: linear-gradient(145deg, #f9f9f9, #e0e0e0); padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
         <table class="table table-striped" style="width: 100%; border-collapse: collapse; margin-top: 10px; font-family: 'Arial', sans-serif;">
             <thead>
@@ -155,161 +51,149 @@
             </tbody>
         </table>
     </div>
+</div>
+<center> <img src=" {% static "images/OIP.jpeg" %}" alt="" style="width:1200px;height:250px"></center>
+<br>
+<br>
+ <h1><center><center>"Don’t wait to create unforgettable memories! Book your tickets now and embark on your next adventure!"</center></center></h1>
+ <br>  
     
-    
-    
    
    
    
-   
-   
+
     <div class="d-flex flex-column w-100 justify-content-center align-items-center" style="padding: 20px;">
             <h2 style="text-align: center; font-family: 'Arial', sans-serif; font-size: 2.5em; margin-bottom: 20px; color: #333;">Available Bus Routes</h2>
             <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff7f50, #ff6347); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff7f50, #ff6347); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">R.T.C Complex - Simhachalam</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 15.2 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                    <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff7f50, #ff6347); color: white;border:2px solid black">
+                    <h3 style="margin-top: 0; font-size: 1.8em;">Sheelanagar - Vadlapudi</h3>
                     <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
                 </div>
                 
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                    <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-                    <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background:linear-gradient(135deg, grey,blue); color: white;border:2px solid black">
+                    <h3 style="margin-top: 0; font-size: 1.8em;">Srinagar - Kancharapalem</h3>
+                    <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 6.5 KM</p>
                   </div>
                 
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #7b68ee, #6a5acd); color: white;">
-                    <h3 style="margin-top: 0; font-size: 1.8em;">Visakhapatnam Airport - R.K Beach</h3>
-                    <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 13.5 KM</p>
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background:linear-gradient(135deg,red, brown); color: white;border:2px solid black">
+                    <h3 style="margin-top: 0; font-size: 1.8em;">Narava - Gajuwaka</h3>
+                    <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 4.5 KM</p>
                 </div>
                 
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #32cd32, #228b22); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #32cd32, #228b22); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">Pendurthi - NAD Junction</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 12.6 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #1e90ff, #00bfff); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #1e90ff, #00bfff); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">R.K Beach - Sabbavaram</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 28.8 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff4500, #ff6347); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff4500, #ff6347); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Srinagar</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 4 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff69b4, #ff1493); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff69b4, #ff1493); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">Duvvada - Kurmanapalem</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 3.2 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff6347, #ff4500); color: white;">
-                  <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Sector:3</h3>
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ff6347, #ff4500); color: white;border:2px solid black">
+                  <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Sector-3 steel plant</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 8 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ffd700, #ff8c00); color: white;">
-                  <h3 style="margin-top: 0; font-size: 1.8em;">Kurmanapalem - Gajuwaka</h3>
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #ffd700, #ff8c00); color: white;border:2px solid black">
+                  <h3 style="margin-top: 0; font-size: 1.8em;">Gajuwaka - Kurmanapalem</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 5.4 KM</p>
                 </div>
               
-                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #20b2aa, #48d1cc); color: white;">
+                <div style="width: 300px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); padding: 20px; text-align: center; background: linear-gradient(135deg, #20b2aa, #48d1cc); color: white;border:2px solid black">
                   <h3 style="margin-top: 0; font-size: 1.8em;">Sector:1 - Kurmanapalem</h3>
                   <p style="margin-bottom: 0; font-size: 1.2em;">Distance: 6.3 KM</p>
                 </div>
             </div>
     </div>
-    <h2><center>"Don’t wait to create unforgettable memories! Book your tickets now and embark on your next adventure!"</center></h2>
-    <center>
-    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card card-default rounded-0 shadow">
-            <div class="card-header">
-                <h4 class="card-title"><b>Find Trip</b></h4>
-            </div>
-            <div class="card-body">
-                <div class="container-fluid">
-                    <form id="find-trip-form" method="POST" onsubmit="showTable(event)">
-                        {% csrf_token %}
-                        <div class="mdc-layout-grid">
-                            <div class="mdc-layout-grid__inner">
-                                <div class="form-group mb-3">
-                                    <label for="date" class="control-label">Date</label>
-                                    <input type="date" class="form-control rounded-0" min='{{ today }}' autofocus name="date" id="date" required="required">
-                                </div>
-                                <div class="form-group mb-3 ">
-                                    <label for="destination" class="control-label">Depart '&' Destination</label>
-                                    <select name="destination" id="destination" class="form-select select2 rounded-0">
-                                        <option selected></option>
-                                        {% for location in trips %}
-                                        <option value="{{ location.start_location }}">{{ location }}</option>
-                                        {% endfor %}
-                                    </select>
-                                    <h4><center>Reconfirm</center></h4>
-                                    <div class="form-group mb-3">
-                                    {{myFilter.form}}
-                                     </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <div class="d-flex w-100 justify-content-between align-items-center">
-                                        <button type="submit" class="btn btn-sm rounded-0 btn-primary" onclick="showtable()">
-                                            Find Trip
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <div class="book2">
+        <div class="d-flex flex-column w-100 justify-content-center align-items-center" style="padding: 20px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
             </div>
         </div>
-        
+        <div style="width: 1300px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative;">
+            <div style="display: flex; background-color: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 2500px; border: 4px solid black;">
+                <form method="GET" action="{% url 'trip_list' %}" style="display: flex; width: 100%;">
+                    <div style="margin: 10px; flex: 1;">
+                        <input type="text" name="start_location" list="startLocations" placeholder="From Station" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
+                        <datalist id="startLocations">
+                            {% for route in trips %}
+                                <option value="{{ route.start_location }}">
+                            {% endfor %}
+                        </datalist>
+                    </div>
+                    <div style="margin: 10px; flex: 1;">
+                        <input type="text" name="end_location" list="endLocations" placeholder="To Station" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
+                        <datalist id="endLocations">
+                            {% for route in trips %}
+                                <option value="{{ route.end_location }}">
+                            {% endfor %}
+                        </datalist>
+                    </div>
+                    <div style="margin: 10px; flex: 1;">
+                        <input type="datetime-local" name="departure_time" placeholder="Departure Time" style="padding: 15px; border: 2px solid black; border-radius: 5px; width: 100%;">
+                    </div>
+                    <div style="display: flex; align-items: center; margin: 10px;">
+                        <button type="submit" style="padding: 15px; background-color: #FF6347; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; border: 2px solid black;">Find Trip</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="trip-table-container" style="background: linear-gradient(145deg, #f9f9f9, #e0e0e0); padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+            <table class="table table-striped" style="width: 100%; border-collapse: collapse; margin-top: 10px; font-family: 'Arial', sans-serif;">
+                <thead>
+                    <tr style="background-color: #4CAF50; color: white; text-align: left;">
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Bus Number</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Operator</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Start Location</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">End Location</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Arrival Time</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Price</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; font-size: 16px;">Book</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tri in trips %}
+                    <tr class="{% if start_location == tri.route.start_location and end_location == tri.route.end_location %}highlight{% endif %}" style="background-color: white; border-bottom: 1px solid #ddd; transition: background-color 0.3s, transform 0.3s;">
+                        <td style="padding: 15px;">{{ tri.bus.bus_number }}</td>
+                        <td style="padding: 15px;">{{ tri.bus.operator.name }}</td>
+                        <td style="padding: 15px;">{{ tri.route.start_location }}</td>
+                        <td style="padding: 15px;">{{ tri.route.end_location }}</td>
+                        <td style="padding: 15px;">{{ tri.arrival_time }}</td>
+                        <td style="padding: 15px;">{{ tri.price }}</td>
+                        <td style="padding: 15px; text-align: center;">
+                            <a href="{% url 'payment' %}" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border: none; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s, box-shadow 0.3s;">Book</a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" style="padding: 15px; text-align: center; color: red;">No trips found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
-    </center>
-    </div>
-    <div id="trip-table-container" style="display: none;">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Bus Number</th>
-                    <th>Operator</th>
-                    <th>Start Location</th>
-                    <th>End Location</th>
-                    <th>Arrival Time</th>
-                    <th>Price</th>
-                    <th>Book</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for tri in triped %}
-                <tr>
-                    <td>{{ tri.bus.bus_number }}</td>
-                    <td>{{ tri.bus.operator.name }}</td>
-                    <td>{{ tri.route.start_location }}</td>
-                    <td>{{ tri.route.end_location }}</td>
-                    <td>{{ tri.arrival_time }}</td>
-                    <td>{{ tri.price }}</td>
-                    <td>
-                        <a href="{% url 'payment' %}" style="background-color:lightgreen;color:black;width:4px;border:2px solid black">Book</a>
-                    </td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td colspan="7">No trips found.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-</div>
-
 {% endblock pageContent %}
 {% block ScriptBlock %}
 <script>
