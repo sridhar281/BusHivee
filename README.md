@@ -1,4 +1,4 @@
-                                                                                   BUSHIVE
+                                                                  BUSHIVE
 
 Introduction
 This project is a simple **Bus Booking Website** developed using Django for the backend and various frontend tools. It allows users to book bus tickets, view available buses, and manage bookings easily. The platform offers a straightforward and intuitive interface to streamline the bus ticket booking process.
