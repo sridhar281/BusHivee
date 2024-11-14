@@ -92,5 +92,3 @@ Frontend:
 Contributing:
 If you'd like to contribute to the project, feel free to fork the repository, create a new branch, and submit a pull request.
 
-
-This `README.md` provides a clear overview of your project and can be expanded as needed. Make sure to replace placeholders like the repository URL with actual details specific to your project.
